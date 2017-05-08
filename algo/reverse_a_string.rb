@@ -4,17 +4,16 @@
 # comes with Ruby!
 
 def reverse_a_string(string)
+    backwards = []
+    x = string.length
+    y = x -1
+x.times do 
 
-  array = string.split(//)
-  i = 1
-  l = array.length
-  backwards = []
-  l.times do 
-    backwards << array[l - i] 
-    i += 1
-  end
+  backwards << string[y]
+  y = y - 1
+end
+p backwards.join
 
-  p backwards.join
 end
 
 
@@ -33,3 +32,4 @@ if result == "edcba"
 else
   puts "F"
 end
+
